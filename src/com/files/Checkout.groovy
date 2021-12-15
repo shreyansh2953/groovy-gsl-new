@@ -5,7 +5,7 @@ class Checkout implements Serializable{
     def steps
     Checkout(steps){this.steps = steps}
 
-    def checkgit(repo,filename){
-      steps.sh "git clone ${repo} ${filename}"
+    def checkgit(repo){
+      steps.sh "git clone ${repo}"
     }
 }
