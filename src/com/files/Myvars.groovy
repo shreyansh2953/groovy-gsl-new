@@ -4,8 +4,12 @@ package com.files
 class Myvars implements Serializable{
     static String place = "Delhi";
 
-    def sayHii(name)
+def myclouseres = {
+    name->
+    echo "hii ${name} from ${place}"
+}
+    def sayHii(name,clouser=myclouseres)
     {
-        echo "hii ${name}"
+        clouser.call(name);
     }
 }
