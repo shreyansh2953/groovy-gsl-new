@@ -6,6 +6,8 @@ class Checkout implements Serializable{
     Checkout(steps){this.steps = steps}
 
     def checkgit(repo){
-      steps.sh "git clone ${repo}"
+    //    steps.sh "git clone ${repo}"
+     steps.checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: "${repo}"]]])
+       
     }
 }
