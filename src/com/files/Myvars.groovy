@@ -6,6 +6,6 @@ class Myvars{
 
     def sayHii(name)
     {
-        println "hii ${name}"
+        echo "hii ${name}"
     }
 }
