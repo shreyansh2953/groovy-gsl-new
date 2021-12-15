@@ -6,7 +6,7 @@ class Myvars implements Serializable{
 
     def sayHii(name)
     {
-        echo "hii ${name}"
-        return this
+        return "hii ${name}"
+        
     }
 }
