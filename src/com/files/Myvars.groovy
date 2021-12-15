@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 package com.files
 
-class Myvars implements Serializable{
+class Myvars {
     static String place = "Delhi";
 
     def sayHii(name)
