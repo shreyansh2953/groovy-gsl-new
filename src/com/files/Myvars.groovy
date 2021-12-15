@@ -6,6 +6,6 @@ class Myvars{
 
     def sayHii(name)
     {
-        echo "hii ${name} from ${place}"
+        echo "hii ${name}"
     }
 }
