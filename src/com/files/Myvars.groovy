@@ -1,5 +1,6 @@
+#!/usr/bin/env groovy
 package com.files
 
-class my{
+class Myvars{
     static String place = "Delhi";
 }
