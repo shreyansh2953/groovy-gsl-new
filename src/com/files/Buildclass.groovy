@@ -5,6 +5,7 @@ class Buildclass implements Serializable {
     def steps
 Buildclass(steps){this.steps = steps}
  def mvn(args) {
+     steps.sh "pwd"
     steps.sh "${steps.tool 'myMaven'}/bin/mvn ${args}"
     steps.sh "echo ${steps.env.BUILD_Id}"
   }
