@@ -5,7 +5,7 @@ class Buildclass implements Serializable {
     def steps
 Buildclass(steps){this.steps = steps}
  def mavenBuild(args,tool,filename) {
-    steps.sh "cd ${filename}"
+    // steps.sh "cd ${filename}"
     steps.sh "pwd"
     steps.sh "ls"
     steps.sh "${tool}/bin/mvn ${args}"
