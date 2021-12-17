@@ -12,17 +12,17 @@ def call()
     stage('checkout')
     {
          deleteDir()
-        def my_git = Checkout.new(this)
+        def my_git = new Checkout(this)
         my_git.checkgit("https://github.com/shreyansh2953/JavaCalculator.git")
     }
    stage('build')
     {
-        def my_build =Buildclass.new(this)
+        def my_build =new Buildclass(this)
         my_build.mavenBuild("clean",mytool,repo_file)
     }
     stage('scan')
     {
-        def my_scan = Sonarscans.new(this)
+        def my_scan =new Sonarscans(this)
         my_scan.scan("sonar:sonar",mytool)
     }
  }
