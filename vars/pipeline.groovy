@@ -4,7 +4,7 @@ def call()
 {
 
 
-    node{
+   node{
     def lib = library 'my-test-library'
     def obj = lib.com.files;
     def mytool = tool 'myMaven'
@@ -25,5 +25,5 @@ def call()
         def my_scan = obj.Sonarscans.new(this)
         my_scan.scan("sonar:sonar",mytool)
     }
-}
+ }
 }
